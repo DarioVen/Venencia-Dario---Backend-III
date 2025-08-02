@@ -7,7 +7,7 @@ export const generateMockPet = () => {
         birthDate: faker.date.past(),
         adopted: false,
         owner: null,
-        image: faker.image.animals()
+        image: faker.image.urlLoremFlickr({ category: 'animals' }) // Usando urlLoremFlickr con categoría animals
     };
 };
 
